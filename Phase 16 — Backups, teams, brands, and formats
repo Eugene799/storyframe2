@@ -1,0 +1,27 @@
+Execute Phase 16 in independent substeps.
+
+16A BACKUPS
+Export/import a versioned bundle with metadata and referenced media.
+Validate paths, sizes, integrity, and schema.
+Metadata JSON alone is not a full backup.
+
+16B TEAMS
+Workspace roles and server-side permissions.
+Expiring invitations, revocation, comments, review.
+Tie approvals to exact content fingerprints.
+
+16C BRAND RECIPES
+Reusable fonts, colors, text styles, narration preferences,
+approved references, pacing, and intro/outro settings.
+Do not leak private media through templates.
+
+16D FORMATS
+Add reviewed square/horizontal layouts.
+Reframe intentionally; never stretch.
+Validate text and product visibility per format.
+
+ACCEPTANCE
+Each substep passes its own persistence, authorization,
+migration, and real-export checks.
+
+Stop after Phase 16.

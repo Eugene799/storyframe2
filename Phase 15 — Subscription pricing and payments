@@ -1,0 +1,45 @@
+Execute Phase 15 only.
+
+Use these as provisional product prices:
+Creator $29/month.
+Pro $79/month.
+Studio $199/month.
+Annual: $290 / $790 / $1990.
+
+Do not finalize included generation/render allowances until
+Phase 14 measures representative full workflows.
+
+Create an editable plan configuration for:
+- Seats.
+- Storage.
+- Brand kits.
+- AI allowance.
+- Source-processing minutes.
+- Rendering allowance.
+- Concurrency.
+- Batch size.
+
+Keep expensive render usage visible.
+Do not imply cheap language-model tokens make video exports free.
+
+METERING
+Use understandable customer units.
+Show exact/max charge before work.
+Avoid charging again for ordinary manual corrections.
+
+BILLING
+Choose a payment provider with owner approval.
+Use verified server-side webhooks and idempotency.
+Do not trust browser payment success.
+
+Support entitlement changes, failed payments, cancellation,
+and clearly disclosed credit expiry/rollover.
+
+Do not enable automatic overages by default.
+Optional auto-top-up requires an explicit spending ceiling.
+
+ACCEPTANCE
+A verified test purchase updates entitlements, and
+quotas prevent unauthorized provider usage.
+
+Stop after Phase 15.

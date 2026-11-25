@@ -1,0 +1,44 @@
+Execute Phase D6 only.
+
+Complete the Discover Ideas production audit.
+
+VERIFY
+- Real external evidence.
+- Real Ollama responses.
+- Correct freshness labels.
+- No fabricated sources or metrics.
+- Preference persistence.
+- Saved/dismissed/used states.
+- Nonrepetitive refresh behavior.
+- User isolation.
+- Server-side limits.
+- Cost ledger.
+- Provider quota failure.
+- Cache expiry.
+- Stale request handling.
+- Short-form project creation.
+- Long-form capability disclosure.
+- Mobile and keyboard usability.
+
+Do not display an unexplained “viral score.”
+If ranking is shown, call it an idea-match score and explain
+its components and limitations.
+
+Track product events:
+idea viewed, saved, dismissed, used, and project completed.
+
+Do not present those actions as proof of public video performance.
+
+Provide:
+- Tests and production-build results.
+- Live browser checks.
+- Provider requests actually executed.
+- Known limitations.
+- Operating-cost observations.
+- Approval-required deployment proposal.
+
+ACCEPTANCE
+A user sets a niche, retrieves evidence-backed ideas,
+refreshes for alternatives, saves one, and starts a real project.
+
+Stop after D6.

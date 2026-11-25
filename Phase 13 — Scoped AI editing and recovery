@@ -1,0 +1,31 @@
+Execute Phase 13 only.
+
+Support commands such as:
+- Replace scene three's image.
+- Rewrite only the hook.
+- Keep visuals and change narration.
+- Adjust CTA across selected ad variants.
+- Expand a repurposed clip's source range.
+
+Generate a validated edit plan before mutation.
+
+Show:
+affected components, preserved components, lock conflicts,
+timing changes, required provider jobs, and estimated cost.
+
+Use allowlisted application commands.
+Never allow model output arbitrary database writes.
+
+Recheck input fingerprints before applying.
+Require confirmation for destructive/billable changes.
+Preserve bounded undo/restore.
+Do not delete referenced previous assets prematurely.
+
+TEST
+Unchanged components remain unchanged.
+Locks, stale plans, partial failure, and rollback work.
+
+ACCEPTANCE
+Targeted edits do not unexpectedly rebuild unrelated work.
+
+Stop after Phase 13.

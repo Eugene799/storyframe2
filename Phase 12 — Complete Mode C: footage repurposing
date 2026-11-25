@@ -1,0 +1,49 @@
+Execute Phase 12 only.
+
+Implement as substeps; stop at a blocked prerequisite.
+
+12A INGEST
+Upload original video to R2.
+Preserve it immutably.
+Measure metadata and verify seeking.
+Use explicit size/duration limits.
+
+12B TRANSCRIBE
+Verify a separate Deepgram STT integration and price.
+Do not assume the TTS integration provides transcription.
+
+Store original/corrected transcript, timestamps,
+speaker labels where supported, and source fingerprint.
+
+Click transcript to seek.
+Text correction must not change original audio.
+
+12C CLIP PROPOSALS
+Use Ollama on transcript/timestamps.
+Return valid exact source ranges and context warnings.
+Do not invent spoken words or promise virality.
+Require review.
+
+12D EDIT/EXPORT
+Start with contiguous source ranges.
+Adjust boundaries, framing, and captions.
+Convert source timestamps correctly to clip-relative time.
+
+Use JSON2Video's verified trimming/composition capabilities.
+If precision is inadequate, report the exact limitation
+and propose an approved additional processing tool.
+
+12E BATCH
+Bound output count and concurrency.
+Retry failed clips individually.
+Export videos, subtitle files, and a source-range manifest.
+
+TEST
+A real recording → corrected transcript → reviewed clips
+→ actual captioned exports.
+
+ACCEPTANCE
+Multiple real clips preserve words, context, timing,
+and source traceability.
+
+Stop after Phase 12.

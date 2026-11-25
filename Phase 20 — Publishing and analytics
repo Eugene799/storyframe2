@@ -1,0 +1,18 @@
+Start with one official publishing integration.
+
+Verify current eligibility, OAuth, scopes, supported media,
+scheduling, and API limits.
+
+Before posting, require confirmation of exact account,
+render version, metadata, visibility, time, and timezone.
+
+Do not auto-publish after rendering.
+Reconcile ambiguous responses before retrying.
+
+Add analytics only from verified authorized APIs.
+Preserve metric definitions and reporting windows.
+Do not claim causation or guaranteed performance.
+
+Acceptance: an approved test publication and correctly associated
+real metrics where available.
+Stop after reporting.

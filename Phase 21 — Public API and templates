@@ -1,0 +1,13 @@
+Implement independently:
+
+A. Scoped revocable API credentials, project/job endpoints,
+idempotency, quotas, signed webhooks, and documented errors.
+
+B. Sanitized reusable templates with placeholder assets,
+new IDs on application, ownership/versioning, and no private-data leaks.
+
+Do not add a paid marketplace without a separate approved plan.
+
+Acceptance: an authorized external client completes a real job,
+and a sanitized template creates an independent valid project.
+Stop after reporting.

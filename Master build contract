@@ -1,0 +1,92 @@
+Build StoryFrame, a multi-workflow AI video studio.
+
+Treat this as a fresh product specification.
+If code exists, inspect it and preserve working features.
+Do not assume any previous phase is complete.
+
+PRODUCT MODES
+A. Educational explainers and fictional stories.
+B. Product ads for small businesses.
+C. Repurposing uploaded footage into short clips.
+
+INITIAL SCOPE
+- 30–90-second vertical videos for Mode A.
+- Short product ads for Mode B.
+- Reviewed excerpts from uploaded recordings for Mode C.
+- Editable scripts, scenes, media, narration, text, and timing.
+- Real downloadable video output.
+
+SELECTED SERVICES
+- Ollama Cloud: all language-model tasks.
+- Supabase: authentication and application database.
+- Cloudflare R2: private media and rendered outputs.
+- Cloudflare Workers AI: budget image generation.
+- Leonardo AI: optional image generation.
+- Deepgram: text-to-speech.
+- Deepgram transcription: verify separately for Mode C.
+- JSON2Video: composition and rendering.
+- Pexels/Pixabay: normalized stock search.
+
+Do not silently replace these services.
+
+OLLAMA MODEL FAMILIES
+- deepseek-v4.1-flash
+- gemma4
+- glm-5.3-flash
+- gpt-oss
+- minimax-m3.1-flash
+- nemotron-3-nano
+
+Discover and test exact cloud request identifiers.
+A local model tag does not prove cloud availability.
+
+ARCHITECTURE
+Use a frontend plus a secure server/API layer.
+Use a durable job mechanism when asynchronous work requires it.
+Choose hosting based on verified capabilities.
+
+Separate:
+- Domain models and mutations.
+- Authorization.
+- Persistence.
+- Provider adapters.
+- Jobs.
+- Usage accounting.
+- Rendering.
+- UI.
+
+Never force Python FastAPI into a host that cannot run it.
+If using the supplied stock endpoint, either deploy FastAPI
+appropriately or port its behavior into the chosen backend.
+
+GLOBAL RULES
+- Provider secrets stay server-side.
+- Authenticate and authorize before billable work.
+- No mock content behind a working-looking generation button.
+- No automatic external deployment, resource creation, or purchases.
+- Preserve original media.
+- Respect locks in domain/server logic.
+- Snapshot generation and render inputs.
+- Detect staleness using content fingerprints.
+- Preserve bounded recoverable history.
+- Use migrations and stable IDs.
+- Validate provider output independently.
+- Bound retries and concurrency.
+- Never claim provider cancellation guarantees no charge.
+- Never promise factual verification or guaranteed ad performance.
+- Clearly distinguish storyboard previews from rendered video.
+
+PHASE REPORT
+For each acceptance criterion report:
+PASS, FAIL, or UNVERIFIED.
+
+Separate:
+- Mocked tests.
+- Live provider calls.
+- In-app browser checks.
+- Exported-file inspection.
+
+Report dependencies, migrations, configuration requirements,
+cost assumptions, security limitations, and remaining blockers.
+
+Stop after the requested phase.

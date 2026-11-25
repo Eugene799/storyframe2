@@ -1,0 +1,12 @@
+Create language variants without changing originals.
+
+Use verified Ollama translation behavior and supported Deepgram
+voices. Preserve glossary, claims, sources, and review status.
+
+Measure narration duration; propose explicit timing changes.
+Test font coverage and layout.
+Do not assume every model/voice supports every language.
+
+Acceptance: reviewed localized script, narration, text, and
+actual rendered output with the original preserved.
+Stop after reporting.

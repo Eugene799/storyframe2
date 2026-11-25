@@ -1,0 +1,38 @@
+Execute Phase 8 only.
+
+Use Deepgram TTS through a secure server adapter.
+
+VERIFY
+Current endpoint, authentication, model/voice IDs,
+output format, character billing, and limits.
+
+FEATURES
+Voice selection, sample preview, generate saved narration,
+uploaded narration alternative, music upload,
+volume/mute, replace/remove.
+
+Store actual audio files in R2.
+Record the exact script fingerprint and voice settings.
+
+If script changes:
+Mark generated narration stale.
+Do not automatically regenerate.
+
+TIMING
+Measure real audio duration.
+Warn about mismatch.
+Do not silently speed speech or cut words.
+Offer explicit script edits or unlocked timing changes.
+
+Do not assume TTS supplies word timestamps.
+Do not label estimated word timing as verified subtitle timing.
+
+BOUNDARIES
+No voice cloning in this phase.
+No unsupported voice claims.
+
+ACCEPTANCE
+A real Deepgram response becomes playable persisted narration
+associated with the approved script.
+
+Stop after Phase 8.

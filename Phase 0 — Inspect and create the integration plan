@@ -1,0 +1,37 @@
+Execute Phase 0 only.
+
+Inspect the workspace and hosting environment.
+
+Verify support for:
+- Frontend.
+- Secure server routes.
+- Supabase authentication.
+- Supabase database migrations.
+- R2 access.
+- Asynchronous jobs.
+- Webhooks or polling.
+- Python hosting if retaining FastAPI.
+- Tests and browser verification.
+
+Build a provider matrix:
+configured, missing, verified, unsupported, or unknown.
+
+Do not print secret values.
+
+Create:
+- Architecture diagram in text.
+- Database/entity plan.
+- Environment-variable inventory.
+- Provider cost-rate schema.
+- Required resource/deployment proposal.
+- Phase dependency checklist.
+
+Identify exact model IDs as unresolved until tested.
+Do not mark all six models available from library pages alone.
+
+Do not provision or deploy without approval.
+
+ACCEPTANCE
+A concrete plan based on the actual environment.
+
+Stop after reporting.

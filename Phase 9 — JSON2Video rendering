@@ -1,0 +1,62 @@
+Execute Phase 9 only.
+
+Use JSON2Video as the production composition/render adapter.
+
+FIRST PROVE
+Submit a small real movie and retrieve its completed result.
+
+Use:
+POST https://api.json2video.com/v2/movies
+x-api-key: server-side JSON2VIDEO_API_KEY
+
+Read the current movie schema and status API.
+Do not invent scene/element properties or polling parameters.
+
+Do not label composition rendering as newly generated footage.
+
+COMPOSITION COMPILER
+Convert the app's immutable composition model into validated
+JSON2Video movie JSON in application code.
+
+The LLM must not submit arbitrary movie JSON directly.
+
+Support only verified:
+- Images.
+- Source video clips.
+- Text.
+- Narration.
+- Music.
+- Framing.
+- Timing.
+- Transitions.
+
+Validate total duration, media access, and supported formats.
+
+JOBS
+Persist submission ID, snapshot, status, attempts, and usage.
+
+Handle ambiguous submission timeouts without blindly resubmitting
+and potentially paying twice.
+
+Use documented polling/webhooks.
+Do not invent webhook signature support.
+Implement appropriate verification/reconciliation.
+
+INPUT ACCESS
+Keep R2 access valid for the full job lifecycle.
+Do not expose unrelated objects.
+
+OUTPUT
+Copy completed output into authorized R2 storage when permitted.
+Verify content type, file size, duration, playback, and download.
+Do not rely permanently on a vendor's temporary result URL.
+
+TEST
+30-second and 90-second projects, images/video, text,
+narration/music, failure, retry, cancellation semantics,
+expired inputs, reload.
+
+ACCEPTANCE
+A real JSON2Video MP4 is played and downloaded through the app.
+
+Stop after Phase 9.

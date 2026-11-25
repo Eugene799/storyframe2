@@ -1,0 +1,58 @@
+Execute Phase 5 only.
+
+Use the verified Ollama connection for:
+- Angles.
+- Scripts.
+- Storyboards.
+- Ad concepts.
+- Transcript-based clip analysis.
+
+MODEL REGISTRY
+Store configurable:
+- Exact provider model ID.
+- Availability.
+- Supported/tested capabilities.
+- Input/output limits.
+- Cost-rate version.
+- Last successful check.
+
+Routing must be configurable and evaluation-based.
+Do not claim one model is best from its name alone.
+
+Use one model per task by default.
+Do not call all six for every request.
+
+JSON OUTPUT
+Do not assume Ollama Cloud schema enforcement.
+Request JSON in prompts.
+Parse and independently validate.
+Allow at most one disclosed repair attempt initially.
+No unlimited repair loops.
+
+PROPOSALS
+Separate proposals from accepted content.
+Respect locks.
+Reject stale results.
+Ignore late canceled responses.
+Preserve history before replacement.
+
+FACTUAL MODE
+Use supplied source excerpts.
+Map claims to source IDs and exact supporting excerpts.
+Flag unsupported claims.
+Review hooks/endings too.
+Do not convert neutral acknowledgment into proof.
+
+Insufficient evidence produces planning notes, not
+a falsely complete sourced script.
+
+STORYBOARD
+Preserve script wording/order.
+Allocate valid durations.
+Never invent media IDs.
+
+ACCEPTANCE
+Real in-app factual and fiction generation can be reviewed,
+accepted, saved, and reopened.
+
+Stop after Phase 5.

@@ -1,0 +1,63 @@
+Execute Phase 1 only.
+
+GOAL
+Code inside this app sends a real authenticated request to
+Ollama Cloud and displays the actual final reply.
+
+Use the server-side OLLAMA_API_KEY.
+Never request the key in chat or expose it in frontend code.
+
+IMPLEMENT
+- A protected server endpoint for model testing.
+- A simple authenticated connection-test screen.
+- Server-side allowlisted model selection.
+- Timeout, request-size limit, and bounded output.
+- Safe error handling.
+- No arbitrary upstream URL supplied by the browser.
+
+Use:
+POST https://ollama.com/api/chat
+
+Start with:
+{
+  "model": "<verified-cloud-request-id>",
+  "messages": [
+    {"role": "user", "content": "Write one short welcome sentence for StoryFrame."}
+  ],
+  "stream": false
+}
+
+Set Authorization: Bearer using the server secret.
+
+Verify the actual response structure.
+Display the final message content, not hidden reasoning.
+
+Do not call localhost:11434.
+Do not substitute a fixture.
+
+TEST ALL SIX FAMILIES
+Resolve exact cloud identifiers from current docs/account access.
+Make small sequential test calls within an approved test budget.
+
+For each record:
+- Requested model.
+- Returned model where supplied.
+- Success/failure.
+- Final reply.
+- Latency.
+- Usage fields actually returned.
+- Sanitized provider error if unavailable.
+
+Do not silently substitute another model for Nemotron or GPT-OSS.
+
+ACCEPTANCE
+At least one real reply is displayed by the app.
+
+This phase is fully complete only when all six have been tested
+and their actual availability is reported.
+Unavailable models remain disabled.
+
+Show the real test replies in the completion report.
+Never invent them.
+
+Stop after Phase 1.

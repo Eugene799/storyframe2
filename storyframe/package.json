@@ -1,0 +1,50 @@
+{
+  "name": "storyframe",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "StoryFrame - Phase 1 Ollama Cloud development connection test",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:server": "tsx watch server/index.ts",
+    "dev:web": "vite",
+    "check": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run check && vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "smoke:live": "tsx scripts/smoke-live.ts",
+    "verify:live-routes": "tsx scripts/verify-live-routes.ts",
+    "verify:media-live": "tsx scripts/verify-media-live.ts",
+    "verify:stock-live": "tsx scripts/verify-stock-live.ts",
+    "verify:stock-routes-live": "tsx scripts/verify-stock-routes-live.ts",
+    "verify:image-live": "tsx scripts/verify-image-live.ts",
+    "verify:image-routes-live": "tsx scripts/verify-image-live.ts --fake-provider",
+    "verify:narration-live": "tsx scripts/verify-narration-live.ts",
+    "verify:r2-live": "tsx scripts/verify-r2-live.ts",
+    "verify:sql": "tsx scripts/verify-sql.ts",
+    "audit:media": "tsx scripts/audit-media.ts",
+    "start:server": "tsx server/index.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.2",
+    "music-metadata": "^12.8.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.6.0",
+    "@testing-library/jest-dom": "^8.0.0",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.13",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "jsdom": "^31.0.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  }
+}

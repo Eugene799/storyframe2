@@ -1,0 +1,20 @@
+{
+  "name": "storyframe-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "storyframe"
+  ],
+  "scripts": {
+    "dev": "npm --workspace=storyframe run dev",
+    "dev:server": "npm --workspace=storyframe run dev:server",
+    "dev:client": "npm --workspace=storyframe run dev:client",
+    "build": "npm --workspace=storyframe run build",
+    "lint": "npm --workspace=storyframe run typecheck",
+    "typecheck": "npm --workspace=storyframe run typecheck",
+    "test": "npm --workspace=storyframe run test",
+    "verify:sql": "npm --workspace=storyframe run verify:sql",
+    "start": "npm --workspace=storyframe run dev:server"
+  }
+}

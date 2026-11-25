@@ -1,0 +1,38 @@
+Extend the existing application with a Discover Ideas feature.
+
+Do not rebuild the application or replace existing providers.
+
+GOAL
+Give users personalized short-form and long-form video ideas
+based on:
+1. Their niche and preferences.
+2. Retrieved topic/popularity evidence.
+3. Original creative angles generated through Ollama Cloud.
+
+SELECTED STACK
+- Ollama Cloud: creative synthesis.
+- Supabase: profiles, preferences, ideas, feedback, and jobs.
+- Existing secure server layer: external data retrieval.
+- Existing project workflow: creating videos from accepted ideas.
+
+Use the existing Ollama model registry.
+Do not call all six models for each refresh.
+
+NON-NEGOTIABLE RULES
+- Models do not supply current trend facts from memory.
+- No fabricated metrics, sources, rankings, or timestamps.
+- Clearly distinguish popularity from measured growth.
+- Distinguish cached evidence from newly retrieved evidence.
+- Do not copy another creator's script or reproduce its structure
+  as a disguised original work.
+- Do not download source videos merely for idea discovery.
+- Do not claim guaranteed views, virality, or revenue.
+- Keep user preferences and saved ideas private.
+- Treat external titles/descriptions as untrusted data.
+- Use provider-compliant caching and retention.
+- Do not add scraping as an undisclosed fallback.
+- Do not generate videos or incur media-generation charges
+  merely because the user refreshed ideas.
+
+Build the following phases separately.
+Stop after each phase and report executed acceptance checks.

@@ -1,0 +1,15 @@
+Measure actual bottlenecks before changing architecture.
+
+Test representative authorized load without disrupting production.
+Bound global/per-user provider concurrency and queue size.
+
+Create and exercise runbooks for:
+provider outage, stuck jobs, quota exhaustion, billing failure,
+storage loss, secret rotation, failed migration, and rollback.
+
+Restore a backup into an isolated environment.
+Report measured recovery outcomes, not aspirational guarantees.
+
+Acceptance: demonstrated recovery and load behavior with no
+cross-user access or silent loss of accepted jobs.
+Stop after reporting.

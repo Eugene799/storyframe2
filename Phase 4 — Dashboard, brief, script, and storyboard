@@ -1,0 +1,43 @@
+Execute Phase 4 only.
+
+Build the application workspace using the real auth/data layer.
+
+CREATE MENU
+- Explain or tell a story.
+- Make a product ad.
+- Repurpose footage.
+
+FOUNDATION
+Dashboard, project settings, brief, script, storyboard,
+media panel, preview, export.
+
+STORY BRIEF
+Topic, audience, goal, factual/fiction, duration, tone,
+preset, voice preference, planning budget.
+
+SCENES
+Stable ID, order, narration, visual direction, asset IDs,
+on-screen text, duration, approval, independent component locks.
+
+EDITING
+Add/edit/duplicate/delete/reorder.
+Enforce locks in mutations and server updates.
+Keep script wording as one source of truth.
+Preserve bounded history.
+
+STALENESS
+Use exact relevant content fingerprints.
+Typing-burst revision counters alone are insufficient.
+
+PREVIEW
+Label storyboard preview honestly.
+Do not pretend it is a rendered movie.
+
+TEST
+Create/edit/reload, locks, IDs, conflicts, duration totals,
+script/storyboard staleness, responsive layouts.
+
+ACCEPTANCE
+A user can build and reopen a complete editable storyboard.
+
+Stop after Phase 4.

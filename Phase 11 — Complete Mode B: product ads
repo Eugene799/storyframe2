@@ -1,0 +1,39 @@
+Execute Phase 11 only.
+
+Build product catalog and campaign workflows.
+
+PRODUCT
+Name, variant, original assets, logo, brand settings,
+approved claims, evidence notes, prohibited wording.
+
+CAMPAIGN
+Audience, offer, price/currency, promotion dates/timezone,
+CTA, destination, duration, aspect ratio, disclaimer.
+
+Generate three distinct ad concepts through Ollama.
+Link factual assertions to approved product claims.
+
+Never invent testimonials, certifications, scarcity,
+discounts, results, or guarantees.
+
+PRODUCT PRESERVATION
+Use actual product assets.
+Do not silently regenerate packaging or labels.
+Generated backgrounds remain separate reviewed layers.
+
+VARIANTS
+Generate bounded hook/CTA/layout variants.
+Show what changes and what stays fixed.
+Keep original campaign and offer snapshots.
+
+Use Deepgram and JSON2Video through shared adapters.
+Export traceable variants with a manifest.
+
+TEST
+Real product assets → approved concept → ad → three variants.
+Check exact product, price, CTA, text, and audio.
+
+ACCEPTANCE
+An accurate reviewed product ad and controlled variants export.
+
+Stop after Phase 11.

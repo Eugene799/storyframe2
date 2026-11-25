@@ -1,0 +1,40 @@
+Execute Phase 7 only.
+
+Create separate image-provider adapters:
+- Cloudflare Workers AI.
+- Leonardo AI.
+
+Do not assume their models, prices, or response formats match.
+
+VERIFY
+Exact model IDs, API access, output formats, dimensions,
+generation limits, pricing units, and relevant usage terms.
+
+The user's $3/1000 image figure is an unverified planning input.
+Do not publish it as a confirmed Leonardo rate.
+
+Cloudflare's free allowance is account-level and finite.
+Do not promise unlimited free images.
+
+WORKFLOW
+Scene direction → editable prompt → cost estimate
+→ explicit generation → preview → attach.
+
+Store prompt, provider, model, settings, job ID, timestamp,
+asset ID, and cost-rate version.
+
+Persist output files in R2, not only expiring provider URLs.
+
+Respect locks and preserve previous accepted media.
+Do not silently fail over to a paid provider.
+A fallback that changes cost or privacy requires policy/consent.
+
+PRODUCT ADS
+Use actual product assets as protected layers.
+Do not claim a regenerated product is the original.
+
+ACCEPTANCE
+Generate and attach a real image from each configured provider.
+Unavailable providers remain clearly disabled.
+
+Stop after Phase 7.

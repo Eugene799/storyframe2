@@ -1,0 +1,66 @@
+Execute Phase D4 only.
+
+IMPLEMENT TWO DISTINCT OPERATIONS
+
+1. NEW IDEAS
+Generate new creative angles from valid cached evidence.
+
+2. UPDATE TREND DATA
+Refresh external evidence according to provider limits,
+then generate ideas when requested.
+
+Label the difference clearly.
+
+REFRESH BEHAVIOR
+- Six ideas per batch.
+- Replace one card independently.
+- Keep saved ideas.
+- Preserve prior batches in bounded history.
+- Prevent duplicate simultaneous submissions.
+- Rate-limit generation server-side.
+- Show actual generation state, not fake percentages.
+
+DEDUPLICATION
+Check:
+- Exact duplicates.
+- Normalized title/topic similarity.
+- Recently shown angles.
+- Saved and already-used ideas.
+
+Use a practical similarity method supported by the stack.
+Do not add an embedding provider unnecessarily.
+
+When unique relevant ideas run out:
+Offer a broader angle, an evergreen suggestion, or a later refresh.
+Do not relabel repeated ideas as new trends.
+
+FEEDBACK
+Support:
+- More like this.
+- Not relevant.
+- Already covered.
+- Too similar.
+- Avoid this topic.
+
+Explain how feedback changes preferences.
+Do not infer sensitive personal traits.
+
+CONCURRENCY
+Capture preference/evidence fingerprints.
+Reject stale responses after niche/filter changes.
+Ignore late canceled results.
+
+COST
+Record actual Ollama and retrieval usage.
+Refreshing must not trigger images, speech, or rendering.
+
+TEST
+Repeated refreshes, individual replacement, exhausted evidence,
+saved preservation, changed preferences, stale jobs,
+quota limits, and cross-user isolation.
+
+ACCEPTANCE
+Refresh returns meaningfully different relevant ideas while
+preserving history and accurately labeling evidence freshness.
+
+Stop after D4.

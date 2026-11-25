@@ -1,0 +1,48 @@
+Execute Phase 17 only.
+
+Stop adding features.
+
+Run real customer journeys for:
+A. Factual story and fiction story.
+B. Product ad and variants.
+C. Uploaded recording and captioned clips.
+
+Verify:
+- All enabled model connections.
+- Auth and cross-user isolation.
+- R2 media access.
+- Provider-secret handling.
+- Prompt/output validation.
+- Stock attribution/caching/import rules.
+- Job retries and deduplication.
+- Quotas and billing.
+- Actual rendered outputs.
+- Audio/text synchronization.
+- Save/reload and recovery.
+- Backup/import.
+- Supported browsers.
+- Mobile usability.
+- Accessibility.
+- Retention and deletion.
+
+Do not expose diagnostic tools publicly.
+Do not claim all six models work unless each was tested.
+
+Produce:
+- Build identifier.
+- PASS/FAIL/UNVERIFIED matrix.
+- Critical defects.
+- Tested compatibility.
+- Accepted limitations.
+- Deployment target.
+- Rollback procedure.
+- Operating checklist.
+- Cost assumptions still unresolved.
+
+Request approval before publishing.
+
+ACCEPTANCE
+No unresolved critical security, data-loss, billing,
+or core-workflow defects, plus demonstrated real exports.
+
+Stop after Phase 17.

@@ -1,0 +1,5 @@
+{
+  "name": "StoryFrame",
+  "description": "AI video studio for stories, explainers, product ads, and footage repurposing with multi-model routing, narration, stock media, image generation, and JSON2Video rendering.",
+  "requestFramePermissions": []
+}

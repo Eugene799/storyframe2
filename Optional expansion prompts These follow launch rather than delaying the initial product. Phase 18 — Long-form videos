@@ -1,0 +1,14 @@
+Add chapter-based 3–5-minute production first.
+
+Measure JSON2Video limits/cost, Deepgram limits, R2 usage,
+and job recovery before raising duration limits.
+
+Support outline approval, chapters, per-chapter generation,
+continuity notes, chapter review, resumable jobs, and final assembly.
+
+Do not regenerate unchanged chapters unnecessarily.
+Do not claim partial-render reuse unless supported.
+
+Acceptance: a real multi-chapter narrated export with measured
+duration, synchronization, cost, and recovery behavior.
+Stop after reporting.

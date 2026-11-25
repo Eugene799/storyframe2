@@ -1,0 +1,60 @@
+Execute Phase 14 only.
+
+Create a versioned provider rate card and durable usage ledger.
+
+TRACK
+Ollama:
+- Provider/model ID.
+- Reported input/output counts.
+- Cache information only when supplied.
+- Reasoning usage treatment if documented.
+- Rate version.
+- Peak/off-peak classification where applicable.
+
+Cloudflare:
+- Model/settings.
+- Reported or calculated documented units.
+- Free allowance tracked separately from nominal cost.
+
+Leonardo:
+- Actual model/settings/credits.
+- Account-specific verified conversion where available.
+
+Deepgram:
+- TTS characters.
+- STT duration/channels/add-ons.
+
+JSON2Video:
+- Actual account billing unit and job usage.
+- Do not assume dollars per minute without verification.
+
+R2:
+- Storage and operations under the actual account rate.
+
+UNKNOWN COSTS
+Use unknown/estimated status.
+Never silently treat missing usage or rates as zero.
+
+ACCOUNTING
+Separate:
+- Estimated cost.
+- Reserved allowance.
+- Reported usage.
+- Settled/reconciled cost.
+- Customer credits.
+- Promotional provider credits.
+
+Do not count cached tokens twice.
+Do not assume unreported cache hits.
+Track repair attempts and unsuccessful billable work.
+
+DURABILITY
+Atomic reservations and settlement.
+Idempotent job accounting.
+No process-local Map as the authoritative quota.
+
+ACCEPTANCE
+One completed project has a traceable cost breakdown
+across all providers actually used.
+
+Stop after Phase 14.

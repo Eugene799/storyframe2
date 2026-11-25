@@ -1,0 +1,31 @@
+Execute Phase 10 only.
+
+Complete the real end-to-end story workflow:
+
+Brief → angles → script review → storyboard review
+→ stock/uploaded/generated media → Deepgram narration
+→ preview → JSON2Video export.
+
+FACTUAL
+Preserve sources, claim review, and unresolved warnings.
+Never label output automatically fact-checked.
+
+FICTION
+Preserve character, setting, and continuity notes.
+
+Provide:
+- Component locks.
+- Missing-asset checklist.
+- Measured narration duration.
+- Pre-render cost estimate.
+- Exact render snapshot.
+- Recoverable history.
+
+TEST
+Complete one factual and one fiction project through actual APIs.
+Verify reload, download, and selective replacement.
+
+ACCEPTANCE
+A customer can finish a real video without developer intervention.
+
+Stop after Phase 10.

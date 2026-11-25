@@ -1,0 +1,72 @@
+Execute Phase D1 only.
+
+Inspect existing profiles, projects, UI, and migrations.
+
+BUILD USER PREFERENCES
+- Primary niche.
+- Up to five subniches.
+- Audience.
+- Region.
+- Language.
+- Preferred platforms.
+- Content goal.
+- Tone.
+- Short-form duration preference.
+- Long-form duration preference.
+- Topics to avoid.
+
+Support editing preferences later.
+Changing preferences must invalidate incompatible pending
+suggestions without deleting saved ideas.
+
+DISCOVER SCREEN
+Tabs:
+- Short-form.
+- Long-form.
+- Saved.
+
+Filters:
+- Niche.
+- Duration.
+- Region/language.
+- Content goal.
+- Evidence type.
+
+CARD STRUCTURE
+- Title.
+- Hook.
+- Angle.
+- Audience fit.
+- Duration.
+- Prompt.
+- Outline.
+- Evidence status.
+- Evidence checked-at timestamp.
+
+ACTIONS
+Save, dismiss, replace, more-like-this, edit prompt, create project.
+
+At this phase, demo cards must be labeled as demo content.
+Do not imply live trends are connected.
+
+DATA MODEL
+Use suitable entities for:
+- Discovery preferences.
+- Idea batches.
+- Idea proposals.
+- Evidence references.
+- Feedback.
+- Saved ideas.
+- Project links.
+
+Use stable IDs and row-level security.
+
+TEST
+Preference persistence, user isolation, saved/dismissed states,
+migration, responsive UI, and empty states.
+
+ACCEPTANCE
+Users can configure their niche and manage clearly labeled
+idea cards without fabricated trend claims.
+
+Stop after D1.

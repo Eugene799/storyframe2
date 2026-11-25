@@ -1,0 +1,46 @@
+Execute Phase 2 only.
+
+Implement Supabase authentication and application persistence.
+
+FEATURES
+- Sign-in/sign-out.
+- Session handling.
+- Project create/read/update/delete.
+- Project types: story, product-ad, repurpose.
+- Stable IDs.
+- Versioned schemas.
+- Safe migrations.
+- Save/conflict states.
+
+DATABASE
+Create suitable tables for:
+- Profiles/workspaces.
+- Projects and revisions.
+- Scenes.
+- Media metadata.
+- Sources and claims.
+- Generation proposals.
+- Provider jobs.
+- Usage ledger.
+- Render snapshots/results.
+
+Use JSON columns only where appropriate.
+Do not turn all entities into an unvalidated document blob.
+
+SECURITY
+Enable and test row-level security.
+Users must not read or modify another user's projects.
+Server privileged access must perform explicit ownership checks.
+Never accept owner_id supplied by the client as authorization.
+
+Do not create a public shared project database.
+
+TEST
+Two-user isolation, expired sessions, unauthorized requests,
+project reload, migration, conflicts, and deletion.
+
+ACCEPTANCE
+Authorized users can persist their own projects;
+other users cannot access them.
+
+Stop after Phase 2.

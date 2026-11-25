@@ -1,0 +1,55 @@
+Execute Phase 6 only.
+
+Implement one protected endpoint:
+GET /stock/search?q=...&type=image|video&sources=pexels,pixabay
+
+Use the supplied FastAPI implementation as a reference.
+Retain FastAPI only if hosting supports it; otherwise port
+the behavior to the existing backend.
+
+NORMALIZED RESULTS
+Include:
+provider, provider_id, type, title, preview_url,
+renditions, source_page, creator, attribution,
+actual rendition dimensions, duration, provenance metadata.
+
+HARDEN THE PROVIDED CODE
+- Verify current provider endpoints.
+- Use supplied video thumbnail fields rather than invented URLs.
+- Fix video selection based on both dimensions/aspect ratio.
+- Exclude playlists disguised by permissive MIME metadata.
+- Report dimensions of the selected rendition.
+- Deduplicate provider names.
+- Reject unsupported/empty source selections.
+- Clarify per-provider versus merged pagination.
+- Redact query-string API keys from logs/errors.
+- Return sanitized errors.
+- Bound cache size.
+- Use shared durable cache in multi-instance deployments.
+- Prevent cache stampedes.
+- Observe provider rate limits and response headers.
+
+CACHE
+Honor Pixabay's 24-hour requirement.
+Do not treat a process-local dictionary as durable shared caching.
+
+UI
+Show provider/creator attribution and source links.
+Separate search previews from imported project assets.
+
+IMPORT
+Download only selected assets through a controlled server flow.
+Validate URL origins and redirects.
+Block private/internal network access.
+Enforce size/type limits.
+Store imported media in R2 with provenance.
+
+Do not turn the service into an unrestricted stock downloader.
+Respect current terms and user-driven search requirements.
+
+ACCEPTANCE
+One real image search and one real video search merge normalized
+results, tolerate one-provider failure, and import a selected
+asset into a project.
+
+Stop after Phase 6.

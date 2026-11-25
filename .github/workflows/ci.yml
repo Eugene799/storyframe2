@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-checks:
+    name: Typecheck, unit tests, build, SQL
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: storyframe
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: storyframe/package-lock.json
+      - run: npm ci --no-audit --no-fund
+      - run: npm run check
+      - run: npm test
+      - run: npm run build
+      # Applies every migration to in-memory PostgreSQL (PGlite) and asserts RLS,
+      # triggers, constraints, and cascades. Needs no hosted project.
+      - run: npm run verify:sql

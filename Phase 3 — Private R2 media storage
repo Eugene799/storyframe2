@@ -1,0 +1,44 @@
+Execute Phase 3 only.
+
+Use Cloudflare R2 for uploaded/generated media and outputs.
+
+Implement:
+- Authorized upload initiation.
+- Bounded file sizes.
+- Actual type validation.
+- Stable media IDs.
+- Private object keys.
+- Authorized download/playback access.
+- Safe deletion and reference counting.
+- Retention/cleanup policy.
+
+Prefer direct signed uploads where supported.
+Never expose R2 secret credentials.
+
+Object naming must not be treated as authorization.
+Keep ownership metadata in the database.
+
+For JSON2Video:
+Design temporary input access that lasts through queueing,
+retries, and rendering.
+Do not make the entire bucket public.
+Avoid persisting signed URLs as durable media IDs.
+Redact signed URL query strings from logs.
+
+Handle:
+- Interrupted uploads.
+- Missing objects.
+- Shared references.
+- Expired links.
+- Unreferenced assets.
+- Storage limits.
+
+TEST
+Upload image, audio, video; reload; access as another user;
+delete one shared reference; verify others remain valid.
+
+ACCEPTANCE
+Private media persists and is available only through
+authorized access paths.
+
+Stop after Phase 3.

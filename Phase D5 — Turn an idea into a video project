@@ -1,0 +1,60 @@
+Execute Phase D5 only.
+
+GOAL
+Move a selected idea into the existing production workflow.
+
+CREATE VIDEO
+Show an editable project-creation summary:
+- Title.
+- Format and duration.
+- Audience.
+- Goal.
+- Tone.
+- Suggested prompt.
+- Outline.
+- Evidence links.
+- Research gaps.
+
+Require user acceptance before project creation.
+
+Create the appropriate project type.
+Do not overwrite an existing project.
+
+DISTINGUISH EVIDENCE
+Trend evidence supports topic selection.
+It must not automatically become verified support for
+the video's factual narration.
+
+Preserve:
+- Original idea ID.
+- Evidence snapshot/reference.
+- Generation provenance.
+- User-edited prompt.
+- Destination project ID.
+
+MARK AS USED
+Link the idea to its project.
+Do not automatically dismiss all similar topics.
+
+LONG-FORM
+If full long-form rendering is unavailable:
+Allow saving the outline or creating supported chapters,
+but clearly explain the production limit.
+
+SPENDING
+Creating a draft project should not automatically start
+image, narration, or render jobs.
+
+Show the next generation steps and estimates separately.
+
+TEST
+Short idea → project → script → storyboard → real export.
+Long idea → supported project/planning workflow.
+Verify refresh, persistence, source distinctions, and no
+unexpected generation charges.
+
+ACCEPTANCE
+A selected discovery idea becomes a real editable project
+with traceable provenance and explicit user control.
+
+Stop after D5.

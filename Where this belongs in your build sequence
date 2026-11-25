@@ -1,0 +1,4 @@
+Implement the discovery interface after authentication and project foundations exist. Connect live recommendations after the Ollama adapter is working. Finish “Create video” integration after the core production workflow works.
+My suggested product presentation is:
+Discover → Choose an idea → Make it yours → Create the video
+That makes the feature a useful entry point into StoryFrame rather than a separate chatbot that produces ideas users must copy and paste manually

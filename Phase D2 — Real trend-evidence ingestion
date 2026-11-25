@@ -1,0 +1,75 @@
+Execute Phase D2 only.
+
+GOAL
+Retrieve real topic evidence before generating trend-aware ideas.
+
+START WITH ONE SOURCE
+Inspect current official YouTube Data API documentation.
+
+Verify:
+- Authentication.
+- Available chart/search parameters.
+- Quotas.
+- Attribution.
+- Caching and retention.
+- Restrictions on derived metrics and storage.
+
+Do not hard-code remembered quota figures.
+
+Use current region/category popularity data and controlled
+niche searches where appropriate.
+
+Do not assume the popularity chart represents every niche
+or every social platform.
+
+NORMALIZED EVIDENCE
+Store only permitted fields:
+- Internal evidence ID.
+- Provider.
+- Source URL.
+- Source/content identifier.
+- Title or topic.
+- Publication time where supplied.
+- Retrieval time.
+- Region/language.
+- Available metrics.
+- Metric observation time.
+- Expiry/revalidation time.
+
+Separate provider metrics from application-derived assessments.
+
+GROWTH
+A single observation cannot establish acceleration.
+Only use a growth label when comparable permitted observations
+support it.
+
+If trend strength cannot be established:
+Use “popular,” “recent,” or “niche inspiration” as appropriate.
+
+SECURITY
+Keep keys server-side.
+Validate inputs.
+Bound queries and pagination.
+Sanitize external content.
+Do not follow arbitrary user-supplied URLs.
+
+CACHE
+Share reusable public evidence appropriately across users,
+but never mix private user preferences into public cache entries.
+
+Respect provider retention rules.
+Handle stale data, quota exhaustion, and partial failure.
+
+CONFIGURATION
+Add a server-side YouTube API key or supported credential method.
+Request approval before provisioning external resources.
+
+TEST
+Perform a real niche query and a real region/category query.
+Show sanitized normalized evidence and source URLs.
+
+ACCEPTANCE
+The app retrieves real, timestamped evidence and honestly
+reports unavailable or insufficient data.
+
+Stop after D2.
